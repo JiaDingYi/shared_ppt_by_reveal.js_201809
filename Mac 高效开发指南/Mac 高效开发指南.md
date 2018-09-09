@@ -90,7 +90,7 @@ note:
 
 
 #### 自己平时使用的一些小插件/app
-1. shadowsocks 的终端翻墙技巧
+- shadowsocks 的终端翻墙技巧
 
 
 <img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_3.png">
@@ -102,9 +102,89 @@ note:
 <img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_7.png">
 
 
+- Go2Shell
+
+
+- tree
+   
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_8.png">
+
+
+- markdown here
+
+使用 markdown 语法编辑邮件
+
+
 
 ## 第三章
 **会介绍 VSCode 和 Vim 的使用，**包括 Vim 的基本操作，快到超乎你想象的光标移动方式，让写代码变成一种享受的编辑技巧，以及各种 Life-Chaging 系列的插件。最后会介绍 VSCode + Vim 的最佳实践，从此忘掉老旧的 Sublime，抛弃慢到爆炸的 Atom 并且卸载掉 JetBrains 全家桶。
+
+
+### 编辑器之神 vim
+Vim 是纯键盘操作，因此在本书开头就描述过的误区同样适用于 Vim：
+
+<h6>一些极端的人不够了解 Vim，感受不到 Vim 的价值，因此拒绝学习 Vim。</h6>
+
+<h6> 另一些极端的人过于沉迷于 Vim，想把 Vim 从编辑器打造成 IDE。因此在本章开头我就想强调的是：</h6>
+
+<h6> Vim 就是个编辑器，用来输入、标记文本的，编程相关的东西交给 IDE 就好了.</h6>
+
+
+学习 vim 是一项耗时巨大，操作繁琐的工程，这里不做详细介绍。
+本人也在摸索学习当中。
+
+
+这里介绍一下作者的编辑器选型：
+1. 前端/Node/其它脚本开发：VSCode + Vim 插件
+2. iOS 开发：Xcode，没有选择 XVim 是因为经常遇到诡异问题，而且不支持 Vim 插件根本没法用
+3. Android 开发：Android Studio + Vim 插件
+
+客户端开发其实没什么选择的，因为暂时没有能完全替代官方 IDE 的东西。
+
+
+###  VSCode 最佳实践
+
+
+#### 通用插件
+- Beautify：代码格式化插件，可以将 JS、CSS 和 HTML 代码格式化
+- Code Outline ：支持多种语言的 outline 提取
+- Code Runner：可以运行多种语言，我配置的快捷键为 Command + R。注意新的文本文件因为没 有后缀名，要用快捷键 Command + K + M 手动切换语言类型。
+- Dash：使用快捷键 Ctrl + h 快速打开 Dash 查找当前单词
+- MarkdownLint：Markdown 语法检查，帮助你写出标准的 Markdown
+
+
+- Project Manager：帮助你管理项目，在多个项目间切换，快捷键 Option + P（首先要添加进项目列表）
+- TODO Highlight：高亮显示 TODO
+- VSCode Icons：根据文件和文件夹名称展示恰当的图标
+-  Bracket Pair Colorizer：给成对的括号配上颜色，方便区分
+-  File Size：在底部 bar 中显示文件大小
+-  Path Intellisense：自动补全文件路径
+
+
+#### 前端插件
+
+
+- Auto Close Tag：自动补全另一侧的 Tag
+- Auto Rename Tag：修改一个 Tag 时，另一侧的 Tag 自动修改
+- Color Highlight：遇到颜色字符串，自动在旁边显示颜色，方便预览
+- CSS Peek：
+- ESLint：代码格式化，支持实时监测和保存时自动修改
+
+
+- HTML Snippets：HTML 语法片段，方便快速输入
+- IntelliSense for CSS class：CSS 自动补全
+- JavaScript code snippets：JS 的语法片段，方便快速输入
+- Modern JavaScript Snippets：补充了一些更新的语法片段
+- HTML CSS Support：方便在 HTML 中插入 CSS 代码
+- SASS：sass 格式文件的代码补全和高亮
+- Vetur：Vue 开发必备的插件，提供代码补全、高亮等功能
+- Vue 2 Snippets：Vue 2 的代码片段
+- Vue peek：快速跳转定义
+
+
+#### 语法插件
+
+一般用什么语言就装什么插件就行了。比如 Node、Bash、Python、Go、Ruby 等。
 
 
 
