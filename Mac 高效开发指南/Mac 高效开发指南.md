@@ -70,14 +70,6 @@ note:
 除了上面这些，介绍一些自己平时使用的小插件/app
 
 
-### 自己平时使用的一些小插件/app
-1. shadowsocks 的终端翻墙技巧
-   
-<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_3.png">
-
-
-
-
 #### 文件/程序搜索
 文件搜索是 Alfred 最基础的功能，类似于系统的 Spotlight，快捷键打开 Alfred 的窗口，然后输入文件名即可。
 这也是为什么我会设置 Dock 栏隐藏的原因，毕竟有了 Alfred，谁会去 Dock 里面找 App 呢。
@@ -95,6 +87,19 @@ note:
 
 1. 唤起 Alfred（显然比打开 Chrome 再进入 google.com 快得多）
 2. 输入搜索内容，回车
+
+
+#### 自己平时使用的一些小插件/app
+1. shadowsocks 的终端翻墙技巧
+
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_3.png">
+
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_4.png">
+
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_7.png">
 
 
 
