@@ -45,14 +45,52 @@ brew cask install iterm2
 note:
 说一点个人使用心得，iTerm2 与 terminal 相比，说不出哪一点最突出，但是每一个方面都要比 terminal 优秀一点点，所有优势积累起来，强的就不是一星半点了。
 
+
 #### 快速编辑
 有时候，如果上一条命令出现了某个小错误，其实不必重新打一遍，可以使用 ^old^new 的写法进行替换，它表示把原来命令中匹配 old 的部分替换成 new，如下图所示：
+
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/assets--LBLo0eP1FW2IkggnToa--LDvQXj1FAD-kiaMg-4g--LDvQiDgnia_CPL_Dr4H-iterm-edit.gif" width="600" height="550">
+
 
 对于特别长的命令，可以使用 zsh 提供的快捷键 Ctrl-x + Ctrl-e 进入 vim 编辑：
 
 
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/assets--LBLo0eP1FW2IkggnToa--LDvQXj1FAD-kiaMg-4g--LDvQjoj8MWI4S_5beyR-iterm-vim.gif" width="600" height="550">
 
-### 
+
+### Alfred
+Alfred 绝对是让 Mac 更加好用的神器之一，如果 Mac 上只能安装一款三方软件，那非 Alfred 莫选。我把 Alfred 拔高到如此地位绝非是为了捧杀它，而是确实实至名归，本文主要会介绍 Alfred 原生的用法。
+
+除了 Alfred 软件自带的功能外，它还允许用户自己开发 workflow 并分享出来，正是这些 workflow，彻底奠定了 Alfred 的神器地位.
+note :
+只介绍免费功能。
+打开使用记录。提示使用的频繁程度。
+除了上面这些，介绍一些自己平时使用的小插件/app
+
+
+### 自己平时使用的一些小插件/app
+1. shadowsocks 的终端翻墙技巧
+
+
+
+#### 文件/程序搜索
+文件搜索是 Alfred 最基础的功能，类似于系统的 Spotlight，快捷键打开 Alfred 的窗口，然后输入文件名即可。
+这也是为什么我会设置 Dock 栏隐藏的原因，毕竟有了 Alfred，谁会去 Dock 里面找 App 呢。
+
+关于文件的搜索，我们还可以配置搜索的范围，搜索哪些类型的文件等等，可以在 Features -> Default Results 中配置。
+
+
+#### 网络搜索
+如果我们想通过 Google 搜索东西，常规步骤是：
+
+1. 打开 Chrome
+2. 在地址栏输入 google.com
+3. 打开谷歌主页，输入搜索内容
+然而有了 Alfred，搜索步骤变成了：
+
+1. 唤起 Alfred（显然比打开 Chrome 再进入 google.com 快得多）
+2. 输入搜索内容，回车
 
 
 
