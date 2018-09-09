@@ -63,7 +63,8 @@ note:
 Alfred 绝对是让 Mac 更加好用的神器之一，如果 Mac 上只能安装一款三方软件，那非 Alfred 莫选。我把 Alfred 拔高到如此地位绝非是为了捧杀它，而是确实实至名归，本文主要会介绍 Alfred 原生的用法。
 
 除了 Alfred 软件自带的功能外，它还允许用户自己开发 workflow 并分享出来，正是这些 workflow，彻底奠定了 Alfred 的神器地位.
-note :
+
+note:
 只介绍免费功能。
 打开使用记录。提示使用的频繁程度。
 除了上面这些，介绍一些自己平时使用的小插件/app
@@ -71,6 +72,9 @@ note :
 
 ### 自己平时使用的一些小插件/app
 1. shadowsocks 的终端翻墙技巧
+   
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_3.png">
+
 
 
 
