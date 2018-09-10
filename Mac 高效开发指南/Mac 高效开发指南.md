@@ -192,6 +192,51 @@ Vim 是纯键盘操作，因此在本书开头就描述过的误区同样适用�
 **重点介绍 git 的进阶使用，**首先会深入浅出的科普 git 的底层原理，让读者能对 git 有正确的认识，彻底摆脱只会 pull/add/commit/push 的小白状态。本章会对几乎所有常用的 git 命令做介绍，包括进阶命令的使用，以及常用参数的解释，结合 log 和 diff 两大工具，充分发挥 git 的版本控制能力。
 
 
+### scmpuff
+scmpuff 是一个 git 拓展，支持数字快捷键的操作，如图所示：
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/assets--LBLo0eP1FW2IkggnToa--LDuHND1oS1WGQ-lzuGt--LDuHeZoy8d96wRwe_qY-image.png" width="800" height="350">
+
+<font size=4>尤其是当文件路径较长时，我们可以用数字来代替文件，同时也支持 1-3 这种写法，表示多个文件。</font>
+
+
+### log
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_9.png">
+
+
+### 交互式 Rebase
+对于已经存在但还没有推送到远程的提交记录，我们可以使用 rebase -i 去编辑他们。假设我们想修改最近三次提交，可以输入 gri head~3，它是完整写法是：
+```
+git rebase -i head~3
+```
+这个命令会展示出最近的三次提交，最老的提交在最上面，最新的提交在最下面，这是因为 git 会按照从旧到新的顺序编辑这些提交。展示的格式如下：
+
+
+<img src="https://raw.githubusercontent.com/JiaDingYi/shared_ppt_by_reveal.js_201809/master/resources/Snip20180909_10.png">
+
+
+### git pull --rebase upstream master
+一个有争议的命令，仁者见仁，智者见智。
+
+
+### git bisect
+
+
 
 ## 第五章
 **是本书的精华所在，**从实用角度出发，结合我近三年的 shell 经验，向读者展示一个奇妙的 shell 世界，挖掘前人大牛们留下来的宝藏。包含了 shell 模型的科普，系统常用命令的介绍，sed/awk 等进阶命令的使用，以及用大量用 shell 提高研发效率的例子。
+
+
+Shell 是一个非常庞大的话题，它的学习路线和普通的编程语言不一致，使用场景在很多人看来也不多。但其实 Shell 是非常强大的胶水语言，能把其它各个模块和系统很好的串联起来，同时由于 shell 非常底层，更加接近操作系统，所以非常用来和系统的软硬件生态打交道。
+
+
+oh-my-zsh
+
+
+shell 的学习是持之以恒的过程，由于时间关系，所以这里不做介绍了。
+大家私下多多交流。
+
+
+
+# QA
