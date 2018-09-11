@@ -329,10 +329,48 @@ git rebase -i head~3
 Shell 是一个非常庞大的话题，它的学习路线和普通的编程语言不一致，使用场景在很多人看来也不多。但其实 Shell 是非常强大的胶水语言，能把其它各个模块和系统很好的串联起来，同时由于 shell 非常底层，更加接近操作系统，所以非常用来和系统的软硬件生态打交道。
 
 
-oh-my-zsh
+iTerm2 + zsh + oh-my-zsh The Most Power Full of Terminal on macOS
 
 
-fastlane
+### git 
+
+oh-my-zsh 默认开启的插件，提供了大量 git 的alias。
+
+详细列表请参见：
+
+https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git。
+
+
+### extract
+
+功能强大的解压插件，所有类型的文件解压一个命令x全搞定，再也不需要去记tar后面到底是哪几个参数了。
+
+
+### z
+
+强大的目录自动跳转命令，会记忆你曾经进入过的目录，用模糊匹配快速进入你想要的目录。
+
+
+### sublime
+
+平时使用sublime比较多，该插件可以使用命令行打开sublime。
+
+```
+st          # 直接打开sublime
+
+st file     # 用sublime打开文件 file
+
+st dir      # 用sublime打开目录 dir
+
+stt         # 在sublime打开当前目录，相当于 st .
+```
+
+
+fastlane 不只是一个打包工具
+
+
+ssh - Allows remote command execution using ssh
+scp - Transfer files via SCP
 
 
 shell 的学习是持之以恒的过程，
