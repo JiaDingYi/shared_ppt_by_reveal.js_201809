@@ -40,6 +40,67 @@
 **先从 Mac 系统说起，**虽然大部分程序员都使用 Mac 电脑，但这个系统并不是为程序员量身定制的，为了考虑大多数用户，必然做出妥协。因此我们有必要做一些定制，让 Mac 系统对开发者更加友好。
 
 
+### 终极脚本
+https://github.com/bestswifter/macbootstrap
+
+
+### 大小写键和 Ctrl 键交换
+
+- Caps Lock 键效率低，自身毫无用处
+- Caps Lock 键占据了黄金的位置
+- Ctrl 键用处多，使用频率高
+- Ctrl 键位置差，很不方便按
+
+
+当这四个理由合在一起时，你很难否认，最好的做法就是：交换 Caps Lock 键和 Ctrl 键。实际上系统的键盘设置里面已经支持了这个操作，但本文会从命令行的角度来聊聊，这样可以方便我们快速搭建 Mac 的工作环境。
+
+```
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000E0},{"HIDKeyboardModifierMappingSrc":0x7000000E0,"HIDKeyboardModifierMappingDst":0x700000039}]}'
+```
+
+
+不过这个脚本有一个大坑，就是虽然立刻就会生效，但是重启后就失效了，所以我们需要在每次启动时都执行一次这个命令。
+
+
+### 添加开机任务
+
+很多程序的设置中都可以选择是否开机自动启动，其实除了启动 App，我们可以编写自己的 shell 脚本，并将它设置为启动时自动执行，这样就获得了更大的灵活性，可以完成任何自己想做的操作。
+
+
+首先我们需要一个配置文件，先给它随便去个名字，比如叫做 com.wzy.onlogin.plist。
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>LaunchOnlyOnce</key>
+    <true/>
+    <key>Label</key>
+    <string>com.wzy.onlogin</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>zsh</string>
+        <string>-c</string>
+        <string>"$HOME/.macbootstrap/onlogin.sh"</string>
+    </array>
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
+```
+内容如下所示，虽然很多，但绝大多数地方都是模板，我们只需要修改其中一处即可.
+
+
+修改后后把这个文件拷贝到 ~/Library/LaunchAgents目录下，表示仅对当前用户生效，然后执行：
+
+```
+sudo launchctl load ~/Library/LaunchAgents/com.wzy.onlogin.plist
+```
+
+将这个文件注册到系统中。
+
+
 ### 开启三指拖移功能
 <img src="https://github.com/JiaDingYi/shared_ppt_by_reveal.js_201809/blob/master/Mac%20高效开发指南/1536465087345.png?raw=true" width="600" height="550">
 
@@ -254,6 +315,9 @@ git rebase -i head~3
 一个有争议的命令，仁者见仁，智者见智。
 
 
+### git cherry-pick 1b82e3c
+
+
 ### git bisect
 
 
@@ -271,5 +335,7 @@ oh-my-zsh
 fastlane
 
 
-shell 的学习是持之以恒的过程，由于时间关系，所以这里不做介绍了。
+shell 的学习是持之以恒的过程，
+而且服务端的同学，应该更加熟悉。
+所以这里不做介绍了。
 大家私下多多交流。
