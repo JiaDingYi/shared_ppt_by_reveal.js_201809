@@ -67,7 +67,7 @@ hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x70
 很多程序的设置中都可以选择是否开机自动启动，其实除了启动 App，我们可以编写自己的 shell 脚本，并将它设置为启动时自动执行，这样就获得了更大的灵活性，可以完成任何自己想做的操作。
 
 
-首先我们需要一个配置文件，先给它随便去个名字，比如叫做 com.wzy.onlogin.plist。
+首先我们需要一个配置文件，先给它随便取个名字，比如叫做 com.wzy.onlogin.plist。
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -89,7 +89,7 @@ hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x70
 </dict>
 </plist>
 ```
-内容如下所示，虽然很多，但绝大多数地方都是模板，我们只需要修改其中一处即可.
+内容如上所示，虽然很多，但绝大多数地方都是模板，我们只需要修改其中一处即可.
 
 
 修改后后把这个文件拷贝到 ~/Library/LaunchAgents目录下，表示仅对当前用户生效，然后执行：
