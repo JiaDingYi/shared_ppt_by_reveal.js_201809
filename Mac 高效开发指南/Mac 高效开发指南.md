@@ -336,13 +336,14 @@ iTerm2 + zsh + oh-my-zsh The Most Power Full of Terminal on macOS
 
 oh-my-zsh 默认开启的插件，提供了大量 git 的alias。
 
-- ga	git add
-- gaa	git add --all
-- gba	git branch -a
-- gcmsg	git commit -m
+|缩写 |全拼 |
+|:--:|:--:|
+|ga |git add |
+|gaa|git add --all|
+|gba|git branch -a|
+|gcmsg|git commit -m|
 
-详细列表请参见：
-
+详细列表请参见：  
 https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git。
 
 
@@ -375,6 +376,7 @@ fastlane 不只是一个打包工具
 
 
 ssh - Allows remote command execution using ssh
+
 scp - Transfer files via SCP
 
 
