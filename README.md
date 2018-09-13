@@ -1272,7 +1272,7 @@ Some reveal.js features, like external Markdown and speaker notes, require that 
 
 1. Clone the reveal.js repository
    ```sh
-   $ git clone https://github.com/hakimel/reveal.js.git
+   $ git clone https://github.com/JiaDingYi/shared_ppt_by_reveal.js_201809
    ```
 
 1. Navigate to the reveal.js folder
